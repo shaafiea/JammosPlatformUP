@@ -1,0 +1,2 @@
+D:\UniWork\Unity_Project\3DPlatformerProject\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+D:\UniWork\Unity_Project\3DPlatformerProject\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
