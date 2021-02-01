@@ -8,6 +8,17 @@ TagManager:
   - Enemy
   - coins
   - jumpBox
+  - CoinBoxAbove
+  - CoinBoxFloor
+  - Lifebox
+  - GameManager
+  - StartCheckpoint
+  - Checkpoint
+  - CoinsTxt
+  - LivesTxt
+  - BoxesTxt
+  - Teleporter
+  - Sinker
   layers:
   - Default
   - TransparentFX

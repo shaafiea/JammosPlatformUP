@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 8447617779766bd49a53dbb5d7994921
   - enabled: 1
-    path: Assets/Scenes/Cinemachine Camera.unity
+    path: Assets/Scenes/TestScene.unity
     guid: 642641ff81f0ac940b965333b713a00a
   - enabled: 1
     path: Assets/Scenes/WinGameScene.unity

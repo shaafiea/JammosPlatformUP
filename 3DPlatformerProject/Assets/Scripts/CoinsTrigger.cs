@@ -5,6 +5,7 @@ using UnityEngine;
 public class CoinsTrigger : MonoBehaviour
 {
     [SerializeField] private MyGameManager myGameManager;
+    [SerializeField] private GameObject pickupEffect; //Particle system
 
     private void Awake()
     {
@@ -20,8 +21,9 @@ public class CoinsTrigger : MonoBehaviour
         }
         else
         {
-            myGameManager.coingrab();
-            Object.Destroy(gameObject);
+            Instantiate(pickupEffect, transform.position, transform.rotation); // Play Effect on pickup
+            myGameManager.coingrab(); // Add to score
+            Object.Destroy(gameObject); //Delete the coin picked up
         }
     }
 

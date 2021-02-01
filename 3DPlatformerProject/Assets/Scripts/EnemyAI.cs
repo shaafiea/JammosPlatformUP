@@ -8,6 +8,8 @@ public class EnemyAI : MonoBehaviour
     [SerializeField]private Animator anim;      // the animator
     [SerializeField]private NavMeshAgent enemyAI;    // the nav mesh agent
 
+    [SerializeField]private int enemyhealth = 1;
+
     public float patrolSpeed = 2f;
     public float chaseSpeed = 5f;
 
@@ -17,9 +19,6 @@ public class EnemyAI : MonoBehaviour
     [SerializeField]private int waypoint;
     public float waiting_time = 1f;
     public Transform[] patrolWayPoints;
-
-    public int enemyhealth = 1;
-
 
 
     //enum AIState {Patrol, Attack, Chase};
@@ -87,16 +86,22 @@ public class EnemyAI : MonoBehaviour
         enemyhealth = enemyhealth - 1;
         if (enemyhealth <= 0)
         {
+            chaseSpeed = 0;
+            patrolSpeed = 0;
             anim.SetTrigger("IsDead");
             Destroy(gameObject, 2f);
+
         }
     }
 
+    //Set Zombie to stay in position and Attack
     public void Attack()
     {
         enemyAI.isStopped = true;
         enemyAI.velocity = Vector3.zero;
     }
+
+    //Set the Zombie to walk in his set waypoints given to himw
     public void Patrol()
     {
         enemyAI.isStopped = false;
@@ -125,6 +130,8 @@ public class EnemyAI : MonoBehaviour
         enemyAI.destination = patrolWayPoints[waypoint].position;
     }
 
+
+    //Set zombie to chase the player
     public void Chase()
     {
         enemyAI.isStopped = false;

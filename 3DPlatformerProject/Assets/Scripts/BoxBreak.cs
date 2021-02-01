@@ -5,6 +5,8 @@ using UnityEngine;
 public class BoxBreak : MonoBehaviour
 {
 
+    //OLD SCRIPT WAY OF DESTROYING BOX
+
     public GameObject player;
     public GameObject destroyedbox;
     public Collider topOfBox;
