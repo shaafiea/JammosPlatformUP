@@ -18,6 +18,7 @@ public class MyGameManager : MonoBehaviour
     public int lives = 5;       // the players ammount of lives
     public GameObject player;  // the player GameObject
     public PlayerController playerk;
+    public CharacterController playercc;
 
     public Vector3 checkpointPos;
 
@@ -37,6 +38,7 @@ public class MyGameManager : MonoBehaviour
 
     void Awake()
     {
+        playercc = player.GetComponent<CharacterController>();
         if (instance)
         {
             DestroyImmediate(gameObject);
@@ -53,6 +55,7 @@ public class MyGameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        playercc.enabled = true;
         livestxt = GameObject.Find("LivesTxt").GetComponent<TMP_Text>();
         coinstxt = GameObject.Find("CoinsTxt").GetComponent<TMP_Text>();
         boxestxt = GameObject.Find("BoxesTxt").GetComponent<TMP_Text>();
@@ -79,12 +82,14 @@ public class MyGameManager : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.O))
         {
+            playercc.enabled = false;
             SceneManager.LoadScene("TestScene"); //Test GameManager Loading everything fine
         }
 
         if (Input.GetKeyDown(KeyCode.I))
         {
             checkpointPos = startCheckpoint;
+            playercc.enabled = false;
             SceneManager.LoadScene("TestScene"); //Test GameManager Loading everything fine
         }
         /*if (Input.GetKeyDown(KeyCode.K))
@@ -192,6 +197,7 @@ public class MyGameManager : MonoBehaviour
         numOfLives(lives);
 
         checkpoint.PlayerPosition();
+        playercc.enabled = true;
         //if the player has no more lifes set to GameOver
         if (lives <= 0)
         {
