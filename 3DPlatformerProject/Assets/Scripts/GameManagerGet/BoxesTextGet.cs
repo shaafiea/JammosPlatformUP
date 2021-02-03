@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+/// <summary>
+/// This is a simple script for the game manager to find the UI Text Script
+/// https://docs.unity3d.com/Manual/index.html
+/// </summary>
 public class BoxesTextGet : MonoBehaviour
 {
 

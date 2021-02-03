@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This scirpt was to test the box breaking collider but is not used in the script anymore
+/// The Line 21 was taught by Brackeys video on how instantiate a prefab which 
+/// uses the western props
+/// https://www.youtube.com/watch?v=EgNV0PWVaS8&t=37s&ab_channel=Brackeys
+/// </summary>
 public class BoxBreak : MonoBehaviour
 {
 

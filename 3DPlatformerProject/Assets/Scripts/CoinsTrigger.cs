@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+///  This code was created by me using Unity's OnTrigger Enter Function to call a specific function
+///  within the game manager
+///  
+/// To make the coin rotate I have taken that code from Unity's Rollerball tutorial
+///https://learn.unity.com/project/roll-a-ball
+/// </summary>
 public class CoinsTrigger : MonoBehaviour
 {
     [SerializeField] private MyGameManager myGameManager;
@@ -22,7 +29,7 @@ public class CoinsTrigger : MonoBehaviour
         else
         {
             Instantiate(pickupEffect, transform.position, transform.rotation); // Play Effect on pickup
-            myGameManager.coingrab(); // Add to score
+            myGameManager.Coingrab(); // Add to score
             Object.Destroy(gameObject); //Delete the coin picked up
         }
     }

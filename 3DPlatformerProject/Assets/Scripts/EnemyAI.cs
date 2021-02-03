@@ -2,13 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-
+/// <summary>
+/// This script was made by me using University Material
+/// https://canvas.kingston.ac.uk/courses/16390/pages/topic-page-unity
+/// </summary>
 public class EnemyAI : MonoBehaviour
 {
     [SerializeField]private Animator anim;      // the animator
     [SerializeField]private NavMeshAgent enemyAI;    // the nav mesh agent
+    public EnemyEventTrigger EET;
 
-    [SerializeField]private int enemyhealth = 1;
+    public int enemyhealth = 1;
 
     public float patrolSpeed = 2f;
     public float chaseSpeed = 5f;
@@ -20,7 +24,7 @@ public class EnemyAI : MonoBehaviour
     public float waiting_time = 1f;
     public Transform[] patrolWayPoints;
 
-
+    public AudioSource dying;
     //enum AIState {Patrol, Attack, Chase};
 
     //AIState state;
@@ -86,10 +90,13 @@ public class EnemyAI : MonoBehaviour
         enemyhealth = enemyhealth - 1;
         if (enemyhealth <= 0)
         {
+            dying.Play();
+            EET.walksound.Stop();
+            EET.enemyAttack.Stop();
             chaseSpeed = 0;
             patrolSpeed = 0;
-            anim.SetTrigger("IsDead");
-            Destroy(gameObject, 2f);
+            anim.SetBool("IsDead", true);
+            Destroy(gameObject, 3f);
 
         }
     }

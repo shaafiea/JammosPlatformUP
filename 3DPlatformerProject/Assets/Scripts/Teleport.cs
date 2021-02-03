@@ -21,15 +21,11 @@ public class Teleport : MonoBehaviour
         {
             playercc.enabled = false; 
             player.transform.position = destination.transform.position;
+            playercc.enabled = true;
             Debug.Log("Work");
             Debug.Log(other.gameObject.name);
             Debug.Log(player.transform.position);
             Debug.Log(destination.transform.position);
         }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        playercc.enabled = true;
     }
 }

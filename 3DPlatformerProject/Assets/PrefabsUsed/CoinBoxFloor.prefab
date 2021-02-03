@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8322145672462141888}
   - component: {fileID: 2256632483829204640}
   - component: {fileID: 5782586955106369817}
+  - component: {fileID: 6777788137867253090}
   m_Layer: 0
   m_Name: CoinBoxFloor
   m_TagString: CoinBoxFloor
@@ -29,8 +30,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4482264331603356781}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.77, y: 0.224, z: -138.89}
-  m_LocalScale: {x: 0.011964999, y: 0.011964999, z: 0.011964999}
+  m_LocalPosition: {x: 0.73885, y: -0.092649, z: -138.23}
+  m_LocalScale: {x: 0.015755, y: 0.015755, z: 0.015755}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -125,3 +126,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa497c58adb75ad4e8857efcc98cb881, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6777788137867253090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4482264331603356781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39600c5a68989d4438947f92c57ca281, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coinBoxHealth: 5
+  destroyedCoinbox: {fileID: 5368577626571053537, guid: 3cbe91f4aa515924c97954d138ba54af, type: 3}
+  playercontroller: {fileID: 0}
+  gameManager: {fileID: 0}

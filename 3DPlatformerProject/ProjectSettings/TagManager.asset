@@ -19,6 +19,8 @@ TagManager:
   - BoxesTxt
   - Teleporter
   - Sinker
+  - LifeboxAir
+  - CoinBoxFloorJump
   layers:
   - Default
   - TransparentFX

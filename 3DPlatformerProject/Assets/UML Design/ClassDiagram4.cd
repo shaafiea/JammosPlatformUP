@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PlayerController">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FEQCCCBAADAAABOAiAQAIAgBIAAAgAAIAAAEAAEAAEA=</HashCode>
+      <FileName>Assets\Scripts\PlayerController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="gameManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MyGameManager">
+    <Position X="14" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JgYBCAAAAiBGAhCoAAYwAAI4gANACAgBUAACIgCAgMg=</HashCode>
+      <FileName>Assets\Scripts\MyGameManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="playerk" />
+      <Field Name="checkpoint" />
+      <Field Name="instance" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PlayerCheckpointPos">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQAAAAAACBAAIAAAAAAAAAAAAAAAAABAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\PlayerCheckpointPos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerCollision">
+    <Position X="7.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQAAEACACAAAAAAAAAAACAEAAQEAEAAQABAEAAAAAE=</HashCode>
+      <FileName>Assets\Scripts\PlayerCollision.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="playercontroller" />
+      <Field Name="enemyAI" />
+      <Field Name="gameManager" />
+      <Field Name="healthbox" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="EnemyAI">
+    <Position X="22.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAQAAAgCABAAAgCAAAAAAAAIIEAAABAQRQQAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\EnemyAI.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="EET" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CoinBoxHealth">
+    <Position X="0.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQAAAAAACAAAAAAAAAAACAAAAAAAEAAAAAAIAAIAAA=</HashCode>
+      <FileName>Assets\Scripts\CoinBoxHealth.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="playercontroller" />
+      <Field Name="gameManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CameraFollow">
+    <Position X="24.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASAAAAAACAAAAAAAAAACAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\CameraFollow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Checkpoint">
+    <Position X="20.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQAAAAAACAAAAAAAAIAAACAQAAAAICBUAAAAAAAACA=</HashCode>
+      <FileName>Assets\Scripts\Checkpoint.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="gameManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CoinsTrigger">
+    <Position X="8.25" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAQAQAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\CoinsTrigger.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="myGameManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DrawWaypoint" Collapsed="true">
+    <Position X="19.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\DrawWaypoint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EndLevelTrigger">
+    <Position X="6.25" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAACAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\EndLevelTrigger.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="gameManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="EnemyEventTrigger">
+    <Position X="25.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAGAAAAAAAAAAAAAAAEAEABAAEAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\EnemyEventTrigger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyAttackTrigger">
+    <Position X="20" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\EnemyAttackTrigger.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="gameManager" />
+      <Field Name="player" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="HeadboxCollision">
+    <Position X="9" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAABAAAAAEAAAAAAAAQAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\HeadboxCollision.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="gameManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="HoleTrigger">
+    <Position X="2.75" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAACBAAAAAAAAAAAAAAAAAAAABQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\HoleTrigger.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="gameManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LivesTrigger">
+    <Position X="4.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\LivesTrigger.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="gameManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PlatformFalling">
+    <Position X="28" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQAAAAAACAAAAAAAAAAAAAAAAAAAIABQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\PlatformFalling.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerAttackTrigger">
+    <Position X="18" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\PlayerAttackTrigger.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="enemyAI" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PlayerEvent">
+    <Position X="22.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAUAAAAAAAAAAQAAAAAAQAAAIEAAAAAAAAAIAAAACA=</HashCode>
+      <FileName>Assets\Scripts\PlayerEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerHurt" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\PlayerHurt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Teleport">
+    <Position X="10.75" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACBAAAAAAAAAAAAAAAAAAAABQAAABAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Teleport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinGameTextGet">
+    <Position X="13.25" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\GameManagerGet\WinGameTextGet.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="gameManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BoxesBrokenGetText">
+    <Position X="17.25" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\GameManagerGet\BoxesBrokenGetText.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="gameManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BoxesTextGet">
+    <Position X="19" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\GameManagerGet\BoxesTextGet.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="gameManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CharacterControllerGet">
+    <Position X="20.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Assets\Scripts\GameManagerGet\CharacterControllerGet.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="gameManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CoinsTextGet">
+    <Position X="22.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\GameManagerGet\CoinsTextGet.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="gameManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="GameOverTextGet">
+    <Position X="11.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\GameManagerGet\GameOverTextGet.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="gameManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LifeTextGet">
+    <Position X="24.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\GameManagerGet\LifeTextGet.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="gameManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="RestartTextGet">
+    <Position X="15.25" Y="14.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\GameManagerGet\RestartTextGet.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="gameManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="BoxCount">
+    <Position X="6.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\BoxCount.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NextScene">
+    <Position X="8.25" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\NextScene.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlatformAttact">
+    <Position X="26.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAABAACAAAAAAAAAAAEAAAAAAAIABQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\PlatformAttact.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

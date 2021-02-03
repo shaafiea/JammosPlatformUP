@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This is a simple script for the game manager to the player's character controller
+/// https://docs.unity3d.com/Manual/index.html
+/// </summary>
 public class CharacterControllerGet : MonoBehaviour
 {
     private MyGameManager gameManager;

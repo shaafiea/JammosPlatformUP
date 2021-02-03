@@ -3,6 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// This script was heavily edited by me which was made by watching a tutorial series. 
+/// Many changes were made and not everything was used.
+/// https://www.youtube.com/watch?v=h2d9Wc3Hhi0&list=PLiyfvmtjWC_V_H-VMGGAZi7n5E0gyhc37
+/// Any additional code not from the tutorial was created by me using Unity Documentation and University Material to help. 
+/// https://canvas.kingston.ac.uk/courses/16390/pages/topic-page-unity
+/// https://docs.unity3d.com/Manual/index.html
+/// </summary>
 public class PlayerController : MonoBehaviour
 {
 
@@ -10,6 +18,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Animator animator;
 
     private MyGameManager gameManager;
+    public AudioSource jump;
+ 
 
     //Values
     [SerializeField] private float playerSpeed = 5.0f;
@@ -57,10 +67,11 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        transform.localScale = new Vector3(1, 1, 1);
         //groundedPlayer = controller.isGrounded; //Old Way of checking if the player is grounded 
         GroundCheck(); //Check if the player is grounded
 
-
+        //Debug.Log(playerVelocity);
         if (knockbackCounter <= 0)
         {
             playerVelocity.x = 0;
@@ -88,6 +99,7 @@ public class PlayerController : MonoBehaviour
                 if (Input.GetButtonDown("Jump"))
                 {
                     //Debug.Log("First Jump");
+                    jump.Play();
                     playerVelocity.y = jumpHeight; //Let the player go up in the y axis
                 }
             }
@@ -96,6 +108,7 @@ public class PlayerController : MonoBehaviour
                 //If the player double jump is still avaliable
                 if (Input.GetButtonDown("Jump") && canDoubleJump)
                 {
+                    jump.Play();
                     //Debug.Log("Work");
                     canDoubleJump = false;
                     playerVelocity.y = jumpHeight * doubleJumpMultiplier; // Allow the player to go up again in the y axis
@@ -119,7 +132,7 @@ public class PlayerController : MonoBehaviour
                 }        
         } else {
             knockbackCounter -= Time.deltaTime;
-            Debug.Log(knockbackCounter);
+           // Debug.Log(knockbackCounter);
         }
 
         //Activate Attacking animation if the player is grounded and has press the left mouse button
@@ -181,12 +194,14 @@ public class PlayerController : MonoBehaviour
     {
         //forces the player back in the air by the mutiplier given
         playerVelocity.y = boxjumpAdd;
+        jump.Play();
     }
 
     public void superBoxJump()
     {
         //Increase the jump height by a big ammount sends the player very high
         playerVelocity.y = jumpHeight * superJumpMultiplier;
+        jump.Play();
     }
 
 

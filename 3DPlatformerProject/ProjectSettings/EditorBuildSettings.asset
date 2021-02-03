@@ -7,14 +7,8 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
-    guid: 8447617779766bd49a53dbb5d7994921
-  - enabled: 1
-    path: Assets/Scenes/TestScene.unity
-    guid: 642641ff81f0ac940b965333b713a00a
-  - enabled: 1
-    path: Assets/Scenes/WinGameScene.unity
     guid: 0ab1d3134ad4b2447add6c10959349a8
   - enabled: 1
-    path: Assets/Scenes/GameOverScene.unity
-    guid: 401fd4d2275f63c4192f7443a7063075
+    path: Assets/Scenes/LevelScene.unity
+    guid: 35f933ec61b7b83419dc107a324d1beb
   m_configObjects: {}

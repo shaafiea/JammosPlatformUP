@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PlayerController">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FEQACCBAADAAABOAiAQAIAgBIAAAgAAIAAAEAAEAAEA=</HashCode>
+      <FileName>Assets\Scripts\PlayerController.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="gameManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="MyGameManager">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JgQBCAAAAiBGAhCoAAYwAAI4gANACAgBUAACIACAgMg=</HashCode>
+      <FileName>Assets\Scripts\MyGameManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="checkpoint" />
+      <Field Name="instance" />
+      <Field Name="playerk" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PlayerCheckpointPos">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQAAAAAACBAAIAAAAAAAAAAAAAAAAABAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\PlayerCheckpointPos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerCollision">
+    <Position X="10.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQAAEACACAAAAAAAAAAACAEAAQEAEAAQABAEAAAAAE=</HashCode>
+      <FileName>Assets\Scripts\PlayerCollision.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="enemyAI" />
+      <Field Name="gameManager" />
+      <Field Name="healthbox" />
+      <Field Name="playercontroller" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="EnemyAI">
+    <Position X="18" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAQAAAgCAAAAAgCAAAAAAAAIIEAAABAQQQQAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\EnemyAI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CoinBoxHealth">
+    <Position X="16" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQAAAAAACAAAAAAAAAAACAAAAAAAEAAAAAAIAAIAAA=</HashCode>
+      <FileName>Assets\Scripts\CoinBoxHealth.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="gameManager" />
+      <Field Name="playercontroller" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CameraFollow">
+    <Position X="18.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASAAAAAACAAAAAAAAAACAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\CameraFollow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Checkpoint">
+    <Position X="16.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAACAAAAAAAAIAAAAAAAAAAAABUAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Checkpoint.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="gameManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CoinsTrigger">
+    <Position X="8.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAQAQAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\CoinsTrigger.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="myGameManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DrawWaypoint" Collapsed="true">
+    <Position X="20.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\DrawWaypoint.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EndLevelTrigger">
+    <Position X="6.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAACAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\EndLevelTrigger.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="gameManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="EnemyEventTrigger">
+    <Position X="20.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEABAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\EnemyEventTrigger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyAttackTrigger">
+    <Position X="20.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\EnemyAttackTrigger.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="gameManager" />
+      <Field Name="player" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="HeadboxCollision">
+    <Position X="12.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAABAAAAAEAAAAAAAAQAAAAAAIAEA=</HashCode>
+      <FileName>Assets\Scripts\HeadboxCollision.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="gameManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="HoleTrigger">
+    <Position X="2.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAACBAAAAAAAAAAAAAAAAAAAABQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\HoleTrigger.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="gameManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="LivesTrigger">
+    <Position X="4.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\LivesTrigger.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="gameManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="NewPlatformAttact">
+    <Position X="22.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAABAACAAAAAAAAAAAEAAAAAAAIABQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\NewPlatformAttact.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlatformFalling">
+    <Position X="24.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQAAAAAACAAAAAAAAAAAAAAAAAAAIABQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\PlatformFalling.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerAttackTrigger">
+    <Position X="13.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\PlayerAttackTrigger.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="enemyAI" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PlayerEvent">
+    <Position X="20.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAUAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\PlayerEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerHurt" Collapsed="true">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\PlayerHurt.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Teleport">
+    <Position X="10.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACBAAAAAAAAAAAAAAAAAAAABQAAABAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Teleport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

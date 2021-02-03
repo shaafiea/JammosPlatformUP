@@ -3,10 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// This script was made by me using university material and Unity Documentation
+/// https://canvas.kingston.ac.uk/courses/16390/pages/topic-page-unity
+/// https://docs.unity3d.com/Manual/index.html
+/// </summary>
 public class PlayerCheckpointPos : MonoBehaviour
 {
     [SerializeField] private MyGameManager gameManager;
     [SerializeField] private GameObject player;
+    public CharacterController playercc;
 
 
     private void Awake()
@@ -18,15 +24,12 @@ public class PlayerCheckpointPos : MonoBehaviour
     void Start()
     {
         player.transform.position = gameManager.checkpointPos;
+        playercc = player.GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        }
 
     }
 

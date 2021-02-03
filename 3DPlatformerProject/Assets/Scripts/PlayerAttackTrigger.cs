@@ -2,6 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// This code was edited by me to help with knockback and call a function from the game manager
+/// which references the player controller.
+/// https://www.youtube.com/watch?v=MwojdoYu0lE&t=840s&ab_channel=gamesplusjames
+/// </summary>
 public class PlayerAttackTrigger : MonoBehaviour
 {
     [SerializeField] private EnemyAI enemyAI;
